@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title><%= locals.title %></title>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="/css/home.css">
+</head>
+<body>
+   <!--  <h1> You are on the home page!Rendered from ejs view! </h1> -->
+
+   <h1 class="header">
+
+    <i class="fas fa-address-book"></i>
+    My Contact List
+
+    </h1>
+    
+    <div id = "contacts">
+
+    <ul>
+       <% for( let i of contact_list){ %>
+           <li>
+           	 <p> <i class="fas fa-user"></i> <%= i.name %> </p>
+           	 <p> <%= i.phone %> </p>
+             <a href="/delete-contact/?id=<%= i._id %>"><i class="fas fa-times"></i></a><!--  & phone = <%= i.phone %> -->
+           </li>
+    	<% } %>
+    </ul>
+
+    </div>
+
+    <form action="/create-contact" method="post">
+        <div class="align_input">
+    	  <input type="text" name="name" placeholder="Enter Name" required >
+        <input type="number" name="phone" placeholder="Enter Phone" required >
+        <div>
+        <button class="add_btn" type="submit">Add </button>
+    </form>
+
+<script type="text/javascript" src="/js/home.js"></script>
+
+</body>
+</html>

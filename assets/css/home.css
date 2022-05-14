@@ -1,0 +1,68 @@
+body{
+	margin: 0;
+}
+
+.header{
+	text-align: center;
+	color: grey;
+	margin-left: 2rem;
+	font-family: sans-serif;
+}
+
+#contacts ul li{
+	list-style-type: none;
+	text-align: center;
+	background-color: deepskyblue;
+	margin: 5px auto;
+	width: 20rem;
+	height: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+}
+
+#contacts ul li:hover{
+	background-color: grey;
+}
+
+#contacts ul li p{
+    font-size: 1rem;
+    color: white;
+    font-family: monospace;
+}
+
+#contacts p{
+	display: inline-block;
+}
+
+.align_input{ 
+	text-align: center;
+	margin-left: 2.6rem;
+}
+
+.align_input input{
+	width: 9.3rem;
+	margin-bottom: 10px;
+	border: none;
+	border-bottom: 1px solid black;
+}
+
+input:focus{
+	outline: none;
+}
+
+.add_btn{
+	background-color: grey;
+	color: white;
+	border-radius: 10px;
+	border: none;
+}
+
+.add_btn:hover{
+	background-color: deepskyblue;
+}
+
+#contacts ul li a{
+	color: red;
+}

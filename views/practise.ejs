@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title><%= title %></title>
+</head>
+<body>
+    <h1> You are on the practise page!Rendered from ejs view! </h1>
+
+    <ul>
+       <% for(let i=1;i < 6;++i){ %>
+
+        <li>
+        	<%= i %>
+        </li>
+
+       <% } %>
+
+    </ul>
+
+     <% if(true){ %>
+     	<h1>It's true! </h1>
+     <% }else{ %>
+     	<h1>It's false!</h1>
+      <% } %>
+
+</body>
+</html>
